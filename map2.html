@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>COVID-19 Counts in United States</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
     <style>
@@ -62,12 +63,41 @@
         a {
             color: black
         }
+
+        #title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 20px;
+            margin-left: 20px;
+            font-family: 'Serif', Times New Roman;
+            font-size: 25pt;
+            color: white
+        }
+
+
+        #subtitle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 70px;
+            margin-left: 120px;
+            font-family: 'Serif', Times New Roman;
+            font-size: 15pt;
+            color: white
+        }
     </style>
 </head>
 
 <body>
     <div id="map"></div>
     <div id="legend"></div>
+    <div id="title">
+        Covid Cases in United States
+    </div>
+    <div id="subtitle">
+        December 31, 2020
+    </div>
     <script>
         mapboxgl.accessToken =
             'pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw';
@@ -134,7 +164,7 @@
         for (var i = 0; i < grades.length; i++) {
             vbreak = grades[i];
             // you need to manually adjust the radius of each dot on the legend 
-            // in order to make sure the legend can be properly referred to the dot on the map.
+            // in order to make sure the legend can be properly referred to the dot on the map.-- how to??? 
             dot_radii = 2 * radii[i];
             labels.push(
                 '<p class="break"><i class="dot" style="background:' + colors[i] + '; width: ' + dot_radii +
