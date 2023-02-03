@@ -26,10 +26,10 @@
             position: absolute;
             bottom: 0;
             right: 0;
-            width: 140px;
+            width: 130px;
             background: #ece2f0;
             opacity: 0.6;
-            margin-right: 30px;
+            margin-right: 20px;
             margin-bottom: 40px;
             padding: 10px 20px 10px 10px;
             border-radius: 3px;
@@ -92,10 +92,10 @@
     <div id="map"></div>
     <div id="legend"></div>
     <div id="title">
-        US Covid Rates per County
+        US Covid Rates per County 2020
     </div>
     <div id="subtitle">
-        December 31, 2020
+        Click Each County to See the Data
     </div>
     <script>
         mapboxgl.accessToken =
@@ -167,7 +167,7 @@
                 ];
                 map.on('click', 'us-covid-rates3', (event) => {
                 new mapboxgl.Popup()
-                    .setLngLat(event.features[0].geometry.coordinates)
+                    .setLngLat(event.features[0].geometry.coordinates[0][0])
                     .setHTML(`<strong>Covid Rates:</strong> ${event.features[0].properties.rates}`)
                     .addTo(map);
                
@@ -176,6 +176,11 @@
             // create legend
             const legend = document.getElementById('legend');
             legend.innerHTML = "<b>US Covid Rates 2020 Per County<br>(cases/population)</b><br><br>";
+             // add the data source
+             const source =
+            '<p style="text-align: right; font-size:10pt">Source: <a href="https://data.census.gov/table?g=0100000US$050000&d=ACS+5-Year+Estimates+Data+Profiles&tid=ACSDP5Y2018.DP05&hidePreview=true">United States Census</a> and <a href="https://github.com/nytimes/covid-19-data/blob/43d32dde2f87bd4dafbb7d23f5d9e878124018b8/live/us-counties.csv/">The New York Time</a></p>';
+            // combine all the html codes.
+        legend.innerHTML = legend.innerHTML + source;
             layers.forEach((layer, i) => {
                 const color = colors[i];
                 const item = document.createElement('div');
@@ -191,11 +196,7 @@
 
             });
         });
-        // add the data source
-        const source =
-            '<p style="text-align: right; font-size:10pt">Source: <a href="https://github.com/nytimes/covid-19-data/blob/43d32dde2f87bd4dafbb7d23f5d9e878124018b8/live/us-counties.csv/">The New York Time</a></p>';
-        // combine all the html codes.
-        legend.innerHTML = labels.join('') + source;
+           
     </script>
 
 
