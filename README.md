@@ -1,4 +1,4 @@
-US Covid-19 Data Visulalization 
+# US Covid-19 Data Visulalization 
 
 ## Introduction 
 This project aimed at mapping covid cases on the county level in the United States in 2020. The first covid case emerged in king county Washington State in January 2020,  and until now, it has killed [at least 1,111,485](https://www.cnn.com/interactive/2020/health/coronavirus-us-maps-and-cases/) people and infected about 102.6 million in the United States, according to the data by Johns Hopkins University. And therefore, tracking Covid-19 cases is relatively important in understanding its spreading features and putting forward coping strategies accordingly. Particularly, the spatial feature of Covid cases and rates are significant, through which we can explore why certain places have more cases or higher rates and what factors lead to a certain kind of spatial pattern. Thus, this project tries to visualize spatial data of Covid-19 rates and cases in the United States in 2020 by the county to show the spatial pattern to help better trace the spreading of the pandemic. 
