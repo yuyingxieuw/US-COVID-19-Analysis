@@ -14,7 +14,7 @@ This project aimed at mapping covid cases on the county level in the United Stat
 
 **Open the [map]() and click each dot to see the specific data!**
 ![Covid-19 Cases by County](https://github.com/yuyingxieuw/US-COVID-19-Analysis/blob/main/img/lab3map2.png)
-<img scr="https://github.com/yuyingxieuw/US-COVID-19-Analysis/blob/main/img/lab3map2.png" width="70%" height="70%">
+<img scr="https://github.com/yuyingxieuw/US-COVID-19-Analysis/blob/main/img/Lab3map1.png" title= "Covid-19 Rates by County" width="70%" height="70%">
 
 ## Acknowledgement
 Thank you for Steven's help in completing this project!
