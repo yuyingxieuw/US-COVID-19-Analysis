@@ -12,7 +12,7 @@ This project aimed at mapping covid cases on the county level in the United Stat
 2. The second one is a dot density map showing covid-19 cases by county in the U.S. in December 2020. We use the [Mapbax Dark v10](https://www.mapbox.com/maps/dark) as the basemap. The U.S. county boundary shapefile was collected from the [U.S. Census Bureau](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html); The Covid-19 case data was downloaded from [The New York Times](https://github.com/nytimes/covid-19-data/blob/43d32dde2f87bd4dafbb7d23f5d9e878124018b8/live/us-counties.csv).
 
 **Open the [map]() and click each dot to see the specific data!** (Projection: Albers)
-<img scr="https://github.com/yuyingxieuw/US-COVID-19-Analysis/blob/main/img/lab3map2" title= "Covid-19 Cases by County" width="70%" height="70%">
+<img scr="https://github.com/yuyingxieuw/US-COVID-19-Analysis/blob/main/img/lab3map2.png" title= "Covid-19 Cases by County" width="70%" height="70%">
 
 ## Acknowledgement
 Thank you for Steven's help in completing this project!
